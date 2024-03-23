@@ -1,4 +1,5 @@
 import React from 'react'
+import {notFound} from "next/navigation"
 
 const ReviewDetail = ({params}:{
     params:{
@@ -6,6 +7,10 @@ const ReviewDetail = ({params}:{
         reviewsId:string,
     }
 }) => {
+    if((parseInt(params.reviewsId)>1000)){
+        notFound()
+
+    }
   return (
     <div>
       Review {params.reviewsId} for prodcut {params.productId}
