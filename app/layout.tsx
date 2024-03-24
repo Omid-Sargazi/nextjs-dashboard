@@ -7,7 +7,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        <header className=" p-10 bg-blue-600">
+          <p>Header</p>
+        </header>
+        {children}
+        <footer className=" p-10 bg-gray-400">
+          <p>Footer</p>
+        </footer>
+        </body>
     </html>
   );
 }
