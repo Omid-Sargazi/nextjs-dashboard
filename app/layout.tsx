@@ -1,6 +1,7 @@
 import "@/app/ui/global.css"
 import { inter } from "./ui/fonts";
 import { Metadata } from "next";
+import Link from "next/link";
 export const metadata :Metadata =  {
   title:{
     absolute:"",
@@ -18,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         <header className=" p-10 bg-blue-600">
+          <Link href="/">
           <p>Header</p>
+          </Link>
         </header>
         {children}
         <footer className=" p-10 bg-gray-400">

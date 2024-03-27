@@ -8,8 +8,12 @@ const ProductsList = () => {
       <Link href="/products/1">
       <h2>Products 1</h2>
       </Link>
+      <Link href="/products/2">
       <h2>Products 2</h2>
+      </Link>
+      <Link replace href="/products/3">
       <h2>Products 3</h2>
+      </Link>
     </div>
   )
 }
